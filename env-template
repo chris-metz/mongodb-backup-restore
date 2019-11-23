@@ -1,0 +1,17 @@
+USER="chris"
+PASSWORD="foobar"
+HOST="mongodb.myserver.com"
+AUTHDB="admin"
+
+# only used for backup:
+
+DBS="mydb1 someotherdb"
+BORG_REPO=/path/to/borgbackups/mongodb
+
+
+# only used for restoring:
+
+# path to folder containing all .bson/.json files:
+BACKUP_LOCATION="/home/chris/restore/somedb"
+# TARGET_DATABASE will be created if not exists
+TARGET_DATABASE="sometargetdb"
