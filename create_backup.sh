@@ -18,7 +18,7 @@ done
 
 cd $TEMPDIR
 borg create --stats --progress --compression lz4 ${BORG_REPO}::${DATUM} .
-borg prune -v --list $BORG_REPO --keep-hourly=12 --keep-daily=7 --keep-weekly=4 --keep-monthly=6
+borg prune -v --list $BORG_REPO --keep-hourly=12 --keep-daily=7 --keep-weekly=4 --keep-monthly=24
 
 cd /
 rm -rf $TEMPDIR
