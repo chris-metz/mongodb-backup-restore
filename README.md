@@ -2,6 +2,10 @@
 
 ## initial setup
 
+### docker
+
+make sure docker is installed
+
 ### borgbackup
 
 ```bash
