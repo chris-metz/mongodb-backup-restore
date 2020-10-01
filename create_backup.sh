@@ -12,7 +12,7 @@ for db in $DBS
 do
   echo $uri
   docker run --rm -v $TEMPDIR:/tmp/mb \
-  mongo:4.2.1 bash -c 'mongodump -v --ssl --sslAllowInvalidCertificates --host '$HOST' --authenticationDatabase '$AUTHDB' --db '$db' --username '$USER' --password '$PASSWORD' --out=/tmp/mb'
+  mongo:4.2.9 bash -c 'mongodump -v --ssl --sslAllowInvalidCertificates --host '$HOST' --authenticationDatabase '$AUTHDB' --db '$db' --username '$USER' --password '$PASSWORD' --out=/tmp/mb'
   sudo chown -R $USER:$USER $TEMPDIR
 done
 
