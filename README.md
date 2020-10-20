@@ -55,7 +55,25 @@ borg extract /home/chris/borgbackups/mongodb::2019-11-23-16-48-01
 /home/chris/mongodb-backup-restore/restore_backup.sh /home/chris/mongodb-backup-restore/environments/my-server-01
 ```
 
-## Links
+
+## Copy Database
+
+
+Copy and adjust environment file
+
+```bash
+cp env-cp-template environments/cp-old-new-env
+vi environments/cp-old-new-env
+```
+
+> WARNING: the script has no existence or validity check for the environment file yet!
+
+```bash
+# run example:
+/path/to/copy_database.sh /path/to/environments/cp-old-new-env
+```
+
+## Links / Credits
 
 - http://tully.io/mongodb-ssl/
 - https://docs.mongodb.com/manual/tutorial/enable-authentication/
