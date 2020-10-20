@@ -1,0 +1,12 @@
+SRC_USER="user"
+SRC_PASSWORD="password"
+SRC_HOST="mongodb.myserver.com"
+SRC_AUTHDB="admin"
+SRC_DB="somedb"
+
+DEST_USER="user"
+DEST_PASSWORD="password"
+DEST_HOST="targetmongo.myserver.com"
+DEST_AUTHDB="admin"
+DEST_DB="target_db_name"
+
