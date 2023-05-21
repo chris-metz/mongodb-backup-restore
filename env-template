@@ -1,6 +1,7 @@
 USER="chris"
 PASSWORD="foobar"
 HOST="mongodb.myserver.com"
+URI="mongodb+srv://mymongodbcluster.mongo.ondigitalocean.com"
 AUTHDB="admin"
 
 # only used for backup:
